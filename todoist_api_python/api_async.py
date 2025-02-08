@@ -19,6 +19,7 @@ if TYPE_CHECKING:
         Task,
     )
 
+__all__ = ['TodoistAPIAsync']
 
 class TodoistAPIAsync:
     def __init__(self, token: str, session: requests.Session | None = None) -> None:
